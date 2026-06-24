@@ -1,0 +1,245 @@
+.chat-container {
+    display: flex;
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+.chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.header-subtitle {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.header-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.ia-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.chat-content {
+    display: flex;
+    gap: 24px;
+    flex: 1;
+}
+
+.chat-zone {
+    flex: 1;
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chat-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.chat-label span {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.chat-sublabel {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: var(--text) !important;
+    letter-spacing: 0 !important;
+}
+
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.suggestion-chip {
+    background: var(--primary-light);
+    color: var(--primary);
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.suggestion-chip:hover {
+    background: #d4d0f7;
+}
+
+.messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 200px;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.message.user {
+    flex-direction: row-reverse;
+}
+
+.message-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.message.bot .message-icon {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+.message.user .message-icon {
+    background: #faeeda;
+    color: var(--accent);
+}
+
+.message-text {
+    background: var(--bg);
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: var(--text);
+    max-width: 70%;
+    line-height: 1.5;
+}
+
+.message.user .message-text {
+    background: var(--primary);
+    color: white;
+}
+
+.chat-input-zone {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.chat-input-zone input {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 24px;
+    border: 1.5px solid var(--border);
+    font-size: 14px;
+}
+
+.send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.send-btn:hover {
+    background: var(--primary-dark);
+}
+
+.docs-panel {
+    width: 300px;
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 24px;
+}
+
+.docs-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+}
+
+.docs-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+}
+
+.docs-search {
+    margin-bottom: 20px;
+}
+
+.docs-search input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    border: 1.5px solid var(--border);
+    font-size: 13px;
+}
+
+.docs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.doc-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.doc-item p {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
