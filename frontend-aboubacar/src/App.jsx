@@ -179,37 +179,77 @@ function ChatWidget({ user }) {
 }
 
 function DocumentsPanel() {
-  const [query, setQuery] = useState("formulaire");
-  const [documents, setDocuments] = useState([]);
+    const [query, setQuery] = useState("");
+    const [documents, setDocuments] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [showAll, setShowAll] = useState(false);
 
-  async function search(event) {
-    event?.preventDefault();
-    const data = await apiRequest(`/api/documents?q=${encodeURIComponent(query)}`);
-    setDocuments(data.documents || []);
-  }
+    async function search(event) {
+        event?.preventDefault();
+        setLoading(true);
+        setShowAll(false);
+        try {
+            const data = await apiRequest(`/api/documents?q=${encodeURIComponent(query)}`);
+            setDocuments(data.documents || []);
+        } catch (err) {
+            console.error(err);
+        } finally {
+            setLoading(false);
+        }
+    }
 
-  useEffect(() => { search(); }, []);
+    async function loadAll() {
+        setLoading(true);
+        setShowAll(true);
+        setQuery("");
+        try {
+            const data = await apiRequest(`/api/documents?q=`);
+            setDocuments(data.documents || []);
+        } catch (err) {
+            console.error(err);
+        } finally {
+            setLoading(false);
+        }
+    }
 
-  return (
-      <section className="dashboard-card documents-card">
-        <div className="section-title">
-          <h2>Documents intranet</h2>
-          <a>Voir tous <ExternalLink size={15} /></a>
-        </div>
-        <form className="mini-search" onSubmit={search}>
-          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Rechercher un document..." />
-          <button>Rechercher</button>
-        </form>
-        <div className="doc-list">
-          {documents.slice(0, 3).map((doc) => (
-              <article key={doc.id}>
-                <FileText />
-                <div><strong>{doc.title}</strong><span>{doc.summary}</span></div>
-              </article>
-          ))}
-        </div>
-      </section>
-  );
+    return (
+        <section className="dashboard-card documents-card">
+            <div className="section-title">
+                <h2>Documents intranet</h2>
+                <a onClick={loadAll} style={{cursor: 'pointer', color: '#6c63d4', fontSize: '14px', fontWeight: '600'}}>
+                    Voir tous →
+                </a>
+            </div>
+            <form className="mini-search" onSubmit={search}>
+                <input
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder="Rechercher un document..."
+                />
+                <button type="submit">{loading ? "..." : "Rechercher"}</button>
+            </form>
+            <div className="doc-list">
+                {documents.length === 0 && !loading && (
+                    <p style={{color: '#888', marginTop: '12px'}}>
+                        {showAll ? "Aucun document disponible." : "Faites une recherche ou cliquez sur Voir tous."}
+                    </p>
+                )}
+                {documents.map((doc) => (
+                    <article
+                        key={doc.id}
+                        style={{cursor: 'pointer'}}
+                        onClick={() => alert(`Document : ${doc.title}\n\nCe document sera disponible prochainement.`)}
+                    >
+                        <FileText />
+                        <div>
+                            <strong>{doc.title}</strong>
+                            <span>{doc.summary}</span>
+                        </div>
+                    </article>
+                ))}
+            </div>
+        </section>
+    );
 }
 
 function AppointmentPanel() {
