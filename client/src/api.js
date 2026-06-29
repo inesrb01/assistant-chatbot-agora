@@ -21,11 +21,23 @@ export function clearSession() {
 
 export async function apiRequest(path, options = {}) {
   const token = localStorage.getItem(TOKEN_KEY);
-  const headers = { "Content-Type": "application/json", ...(options.headers || {}) };
+  const headers = {
+    "Content-Type": "application/json",
+    ...(options.headers || {}),
+  };
+
   if (token) headers.Authorization = `Bearer ${token}`;
 
-  const response = await fetch(path, { ...options, headers });
+  const API_URL = import.meta.env.VITE_API_URL;
+
+  const response = await fetch(`${API_URL}${path}`, {
+    ...options,
+    headers,
+  });
+
   const data = await response.json().catch(() => ({}));
+
   if (!response.ok) throw new Error(data.error || "Erreur API");
+
   return data;
 }
