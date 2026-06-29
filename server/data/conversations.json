@@ -1,0 +1,826 @@
+[
+  {
+    "id": "msg-1782256494408",
+    "createdAt": "2026-06-23T23:14:54.408Z",
+    "userId": "u-admin-1",
+    "role": "staff",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782256499719",
+    "createdAt": "2026-06-23T23:14:59.719Z",
+    "userId": "u-admin-1",
+    "role": "staff",
+    "question": "Problème de connexion Agora",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782256504214",
+    "createdAt": "2026-06-23T23:15:04.214Z",
+    "userId": "u-admin-1",
+    "role": "staff",
+    "question": "Comment demander une reprise d'examen ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782256511257",
+    "createdAt": "2026-06-23T23:15:11.257Z",
+    "userId": "u-admin-1",
+    "role": "staff",
+    "question": "examen ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782408045317",
+    "createdAt": "2026-06-25T17:20:45.317Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782408052426",
+    "createdAt": "2026-06-25T17:20:52.426Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Problème de connexion Agora",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782408065271",
+    "createdAt": "2026-06-25T17:21:05.271Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "bonjour",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782408270030",
+    "createdAt": "2026-06-25T17:24:30.030Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Problème de connexion Agora",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782409026423",
+    "createdAt": "2026-06-25T17:37:06.423Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782409031989",
+    "createdAt": "2026-06-25T17:37:11.989Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Problème de connexion Agora",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782409202928",
+    "createdAt": "2026-06-25T17:40:02.928Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782761698747",
+    "createdAt": "2026-06-29T19:34:58.748Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782761704305",
+    "createdAt": "2026-06-29T19:35:04.305Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782761940296",
+    "createdAt": "2026-06-29T19:39:00.296Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Je veux un document officiel",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782762963422",
+    "createdAt": "2026-06-29T19:56:03.422Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Comment demander une reprise d'examen ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782762967974",
+    "createdAt": "2026-06-29T19:56:07.974Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Je veux un document officiel",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782763106826",
+    "createdAt": "2026-06-29T19:58:26.826Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "Je n'ai pas trouvé d'information interne assez précise pour répondre. Essaie avec une question plus détaillée ou contacte l'administration.",
+    "sources": [],
+    "documents": []
+  },
+  {
+    "id": "msg-1782763188636",
+    "createdAt": "2026-06-29T19:59:48.636Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Je veux un document officiel",
+    "answer": "D'après la base interne, Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+    "sources": [
+      {
+        "keywords": [
+          "document",
+          "officiel",
+          "attestation",
+          "releve",
+          "relevé",
+          "formulaire"
+        ],
+        "title": "Demander un document officiel",
+        "category": "Documents",
+        "content": "Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "document",
+          "officiel",
+          "formulaire"
+        ]
+      },
+      {
+        "keywords": [
+          "reprise",
+          "examen",
+          "absence",
+          "justifiee",
+          "justifiée"
+        ],
+        "title": "Demander une reprise d'examen",
+        "category": "Examens",
+        "content": "Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "reprise",
+          "examen",
+          "formulaire"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782763192063",
+    "createdAt": "2026-06-29T19:59:52.063Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "D'après la base interne, Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+    "sources": [
+      {
+        "keywords": [
+          "horaire",
+          "cours",
+          "emploi",
+          "temps"
+        ],
+        "title": "Consulter l'horaire de cours",
+        "category": "Horaire",
+        "content": "Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "horaire",
+          "cours",
+          "emploi du temps"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782763201132",
+    "createdAt": "2026-06-29T20:00:01.132Z",
+    "userId": "u-teacher-1",
+    "role": "teacher",
+    "question": "Problème de connexion Agora",
+    "answer": "D'après la base interne, En cas de problème de connexion Agora, vérifiez votre courriel et votre mot de passe. Si le problème continue, contactez le support ou l'administration.",
+    "sources": [
+      {
+        "keywords": [
+          "connexion",
+          "probleme",
+          "problème",
+          "login",
+          "mot",
+          "passe",
+          "agora"
+        ],
+        "title": "Problème de connexion Agora",
+        "category": "Support",
+        "content": "En cas de problème de connexion Agora, vérifiez votre courriel et votre mot de passe. Si le problème continue, contactez le support ou l'administration.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "connexion",
+          "support",
+          "mot de passe"
+        ]
+      },
+      {
+        "keywords": [
+          "horaire",
+          "cours",
+          "emploi",
+          "temps"
+        ],
+        "title": "Consulter l'horaire de cours",
+        "category": "Horaire",
+        "content": "Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "horaire",
+          "cours",
+          "emploi du temps"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782763535201",
+    "createdAt": "2026-06-29T20:05:35.201Z",
+    "userId": "u-admin-1",
+    "role": "staff",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "D'après la base interne, Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+    "sources": [
+      {
+        "keywords": [
+          "horaire",
+          "cours",
+          "emploi",
+          "temps"
+        ],
+        "title": "Consulter l'horaire de cours",
+        "category": "Horaire",
+        "content": "Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "horaire",
+          "cours",
+          "emploi du temps"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782763744496",
+    "createdAt": "2026-06-29T20:09:04.496Z",
+    "userId": "u-admin-1",
+    "role": "staff",
+    "question": "Comment demander une reprise d'examen ?",
+    "answer": "D'après la base interne, Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+    "sources": [
+      {
+        "keywords": [
+          "reprise",
+          "examen",
+          "absence",
+          "justifiee",
+          "justifiée"
+        ],
+        "title": "Demander une reprise d'examen",
+        "category": "Examens",
+        "content": "Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "reprise",
+          "examen",
+          "formulaire"
+        ]
+      },
+      {
+        "keywords": [
+          "document",
+          "officiel",
+          "attestation",
+          "releve",
+          "relevé",
+          "formulaire"
+        ],
+        "title": "Demander un document officiel",
+        "category": "Documents",
+        "content": "Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "document",
+          "officiel",
+          "formulaire"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782764443946",
+    "createdAt": "2026-06-29T20:20:43.946Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "D'après la base interne, Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+    "sources": [
+      {
+        "keywords": [
+          "horaire",
+          "cours",
+          "emploi",
+          "temps"
+        ],
+        "title": "Consulter l'horaire de cours",
+        "category": "Horaire",
+        "content": "Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "horaire",
+          "cours",
+          "emploi du temps"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782767374936",
+    "createdAt": "2026-06-29T21:09:34.936Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Je veux un document officiel",
+    "answer": "D'après la base interne, Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+    "sources": [
+      {
+        "keywords": [
+          "document",
+          "officiel",
+          "attestation",
+          "releve",
+          "relevé",
+          "formulaire"
+        ],
+        "title": "Demander un document officiel",
+        "category": "Documents",
+        "content": "Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "document",
+          "officiel",
+          "formulaire"
+        ]
+      },
+      {
+        "keywords": [
+          "reprise",
+          "examen",
+          "absence",
+          "justifiee",
+          "justifiée"
+        ],
+        "title": "Demander une reprise d'examen",
+        "category": "Examens",
+        "content": "Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "reprise",
+          "examen",
+          "formulaire"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782767375544",
+    "createdAt": "2026-06-29T21:09:35.544Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Je veux un document officiel",
+    "answer": "D'après la base interne, Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+    "sources": [
+      {
+        "keywords": [
+          "document",
+          "officiel",
+          "attestation",
+          "releve",
+          "relevé",
+          "formulaire"
+        ],
+        "title": "Demander un document officiel",
+        "category": "Documents",
+        "content": "Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "document",
+          "officiel",
+          "formulaire"
+        ]
+      },
+      {
+        "keywords": [
+          "reprise",
+          "examen",
+          "absence",
+          "justifiee",
+          "justifiée"
+        ],
+        "title": "Demander une reprise d'examen",
+        "category": "Examens",
+        "content": "Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "reprise",
+          "examen",
+          "formulaire"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782767379952",
+    "createdAt": "2026-06-29T21:09:39.952Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Je veux un document officiel",
+    "answer": "D'après la base interne, Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+    "sources": [
+      {
+        "keywords": [
+          "document",
+          "officiel",
+          "attestation",
+          "releve",
+          "relevé",
+          "formulaire"
+        ],
+        "title": "Demander un document officiel",
+        "category": "Documents",
+        "content": "Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "document",
+          "officiel",
+          "formulaire"
+        ]
+      },
+      {
+        "keywords": [
+          "reprise",
+          "examen",
+          "absence",
+          "justifiee",
+          "justifiée"
+        ],
+        "title": "Demander une reprise d'examen",
+        "category": "Examens",
+        "content": "Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "reprise",
+          "examen",
+          "formulaire"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782767380707",
+    "createdAt": "2026-06-29T21:09:40.707Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Comment demander une reprise d'examen ?",
+    "answer": "D'après la base interne, Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+    "sources": [
+      {
+        "keywords": [
+          "reprise",
+          "examen",
+          "absence",
+          "justifiee",
+          "justifiée"
+        ],
+        "title": "Demander une reprise d'examen",
+        "category": "Examens",
+        "content": "Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "reprise",
+          "examen",
+          "formulaire"
+        ]
+      },
+      {
+        "keywords": [
+          "document",
+          "officiel",
+          "attestation",
+          "releve",
+          "relevé",
+          "formulaire"
+        ],
+        "title": "Demander un document officiel",
+        "category": "Documents",
+        "content": "Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "document",
+          "officiel",
+          "formulaire"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782767381594",
+    "createdAt": "2026-06-29T21:09:41.594Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Où consulter mon horaire de cours ?",
+    "answer": "D'après la base interne, Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+    "sources": [
+      {
+        "keywords": [
+          "horaire",
+          "cours",
+          "emploi",
+          "temps"
+        ],
+        "title": "Consulter l'horaire de cours",
+        "category": "Horaire",
+        "content": "Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "horaire",
+          "cours",
+          "emploi du temps"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782767382424",
+    "createdAt": "2026-06-29T21:09:42.424Z",
+    "userId": "u-student-1",
+    "role": "student",
+    "question": "Problème de connexion Agora",
+    "answer": "D'après la base interne, En cas de problème de connexion Agora, vérifiez votre courriel et votre mot de passe. Si le problème continue, contactez le support ou l'administration.",
+    "sources": [
+      {
+        "keywords": [
+          "connexion",
+          "probleme",
+          "problème",
+          "login",
+          "mot",
+          "passe",
+          "agora"
+        ],
+        "title": "Problème de connexion Agora",
+        "category": "Support",
+        "content": "En cas de problème de connexion Agora, vérifiez votre courriel et votre mot de passe. Si le problème continue, contactez le support ou l'administration.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "connexion",
+          "support",
+          "mot de passe"
+        ]
+      },
+      {
+        "keywords": [
+          "horaire",
+          "cours",
+          "emploi",
+          "temps"
+        ],
+        "title": "Consulter l'horaire de cours",
+        "category": "Horaire",
+        "content": "Vous pouvez consulter votre horaire dans la section Emploi du temps de l'intranet Agora. Vous pouvez aussi utiliser le bouton Emploi du temps dans le menu de gauche.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "horaire",
+          "cours",
+          "emploi du temps"
+        ]
+      }
+    ],
+    "documents": []
+  },
+  {
+    "id": "msg-1782767414463",
+    "createdAt": "2026-06-29T21:10:14.463Z",
+    "userId": "u-admin-1",
+    "role": "staff",
+    "question": "Comment demander une reprise d'examen ?",
+    "answer": "D'après la base interne, Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+    "sources": [
+      {
+        "keywords": [
+          "reprise",
+          "examen",
+          "absence",
+          "justifiee",
+          "justifiée"
+        ],
+        "title": "Demander une reprise d'examen",
+        "category": "Examens",
+        "content": "Pour demander une reprise d'examen, vous devez remplir le formulaire de reprise d'examen dans la section Documents, puis contacter le service pédagogique avec votre justification.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "reprise",
+          "examen",
+          "formulaire"
+        ]
+      },
+      {
+        "keywords": [
+          "document",
+          "officiel",
+          "attestation",
+          "releve",
+          "relevé",
+          "formulaire"
+        ],
+        "title": "Demander un document officiel",
+        "category": "Documents",
+        "content": "Pour obtenir un document officiel, allez dans la section Documents, recherchez le formulaire nécessaire, puis envoyez votre demande à l'administration.",
+        "audience": [
+          "student",
+          "teacher",
+          "staff",
+          "all"
+        ],
+        "tags": [
+          "document",
+          "officiel",
+          "formulaire"
+        ]
+      }
+    ],
+    "documents": []
+  }
+]

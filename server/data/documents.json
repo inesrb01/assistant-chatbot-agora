@@ -1,0 +1,34 @@
+[
+  {
+    "id": "doc-formulaire-reprise",
+    "title": "Formulaire de reprise d'examen",
+    "category": "Évaluation",
+    "summary": "Document à remplir pour demander une reprise d'examen après une absence justifiée.",
+    "url": "/docs/formulaire-reprise-examen.pdf",
+    "audience": ["student", "teacher", "staff"]
+  },
+  {
+    "id": "doc-guide-etudiant",
+    "title": "Guide étudiant Agora",
+    "category": "Études",
+    "summary": "Guide pour consulter l'horaire, les cours, les messages et les documents importants.",
+    "url": "/docs/guide-etudiant.pdf",
+    "audience": ["student"]
+  },
+  {
+    "id": "doc-procedure-notes",
+    "title": "Procédure de saisie des notes",
+    "category": "Enseignement",
+    "summary": "Procédure destinée aux enseignants pour publier les résultats dans l'intranet.",
+    "url": "/docs/procedure-notes.pdf",
+    "audience": ["teacher", "staff"]
+  },
+  {
+    "id": "doc-rdv-admin",
+    "title": "Procédure rendez-vous administration",
+    "category": "Administration",
+    "summary": "Instructions internes pour gérer les demandes de rendez-vous des utilisateurs.",
+    "url": "/docs/procedure-rdv-admin.pdf",
+    "audience": ["staff"]
+  }
+]

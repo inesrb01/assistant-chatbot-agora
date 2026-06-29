@@ -1,0 +1,50 @@
+[
+  {
+    "id": "kb-horaire",
+    "title": "Consulter son horaire",
+    "category": "Études",
+    "tags": ["horaire", "cours", "intranet", "agenda"],
+    "content": "l'horaire de cours est disponible dans l'intranet Agora, section Mes cours puis Horaire. Les changements récents sont affichés en haut de la page.",
+    "audience": ["student"]
+  },
+  {
+    "id": "kb-reprise-examen",
+    "title": "Demande de reprise d'examen",
+    "category": "Évaluation",
+    "tags": ["examen", "reprise", "absence", "formulaire"],
+    "content": "pour demander une reprise d'examen, l'étudiant doit remplir le formulaire de reprise, joindre une justification et attendre la réponse du service pédagogique.",
+    "audience": ["student", "teacher", "staff"]
+  },
+  {
+    "id": "kb-document-officiel",
+    "title": "Documents officiels",
+    "category": "Administration",
+    "tags": ["attestation", "document", "relevé", "formulaire"],
+    "content": "les attestations, relevés et formulaires officiels sont accessibles dans la section Documents. Certaines demandes nécessitent une validation administrative.",
+    "audience": ["student", "staff"]
+  },
+  {
+    "id": "kb-enseignant-notes",
+    "title": "Saisie des notes",
+    "category": "Enseignement",
+    "tags": ["notes", "enseignant", "évaluation", "classe"],
+    "content": "les enseignants peuvent saisir les notes dans le module Évaluations. Les modifications doivent être sauvegardées avant la date limite indiquée par l'administration.",
+    "audience": ["teacher", "staff"]
+  },
+  {
+    "id": "kb-admin-rdv",
+    "title": "Gestion des demandes de rendez-vous",
+    "category": "Administration",
+    "tags": ["rendez-vous", "service", "demande", "suivi"],
+    "content": "les demandes de rendez-vous reçues sont traitées par l'administration selon le service choisi, les disponibilités et le degré d'urgence.",
+    "audience": ["staff"]
+  },
+  {
+    "id": "kb-support-technique",
+    "title": "Support technique Agora",
+    "category": "Technique",
+    "tags": ["connexion", "mot de passe", "support", "bug"],
+    "content": "en cas de problème de connexion, il faut vérifier le courriel, réinitialiser le mot de passe ou contacter le support informatique du collège.",
+    "audience": ["student", "teacher", "staff"]
+  }
+]
