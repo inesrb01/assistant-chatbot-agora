@@ -25,7 +25,7 @@ export function createServer() {
   const clientOrigin = process.env.CLIENT_ORIGIN || "http://127.0.0.1:5173";
 
   app.use(helmet());
-  app.use(cors({ origin: clientOrigin, credentials: true }));
+  app.use(cors({ origin: true, credentials: true }));
   app.use(express.json());
   app.use(morgan("dev"));
 
