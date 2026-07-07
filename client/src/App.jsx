@@ -299,7 +299,26 @@ function DocumentsPanel({ roleName, onOpenDetail }) {
     event?.preventDefault();
 
     const data = await apiRequest(`/api/documents?q=${encodeURIComponent(query)}`);
-    setDocuments(data.documents || []);
+    const results = data.documents || [];
+
+  if (results.length > 0) {
+  setDocuments(results);
+  } else {
+  setDocuments([
+    {
+      id: "local-formulaire-reprise",
+      title: "Formulaire de reprise d'examen",
+      summary: "Document à remplir pour demander une reprise d'examen après une absence justifiée.",
+      category: "Formulaire"
+    },
+    {
+      id: "local-attestation",
+      title: "Demande d'attestation officielle",
+      summary: "Formulaire pour demander une attestation officielle auprès de l'administration.",
+      category: "Document officiel"
+    }
+  ]);
+    }
   }
 
   useEffect(() => {
@@ -424,6 +443,9 @@ function SimplePage({ title, children }) {
 function Dashboard({ user, onLogout }) {
   const [activePage, setActivePage] = useState("Accueil");
   const [detail, setDetail] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [searchLoading, setSearchLoading] = useState(false);
 
   const roleLabel = user.roleLabel || "Étudiant";
   const role = roleLabel.toLowerCase();
@@ -478,6 +500,98 @@ function Dashboard({ user, onLogout }) {
     setActivePage("Détail");
   }
 
+  const localSearchItems = useMemo(() => {
+    const baseItems = [
+      { type: "Page", title: "Accueil", description: "Page principale de l'intranet Agora avec les services rapides.", page: "Accueil", keywords: "accueil dashboard intranet agora services" },
+      { type: "Page", title: "Actualités", description: "Annonces et nouvelles importantes de l'établissement.", page: "Actualités", keywords: "actualités annonces nouvelles information établissement" },
+      { type: "Page", title: "Documents", description: "Recherche de formulaires, guides et documents officiels.", page: "Documents", keywords: "documents formulaire officiel attestation guide" },
+      { type: "Page", title: "Messagerie", description: "Messages internes et communications importantes.", page: "Messagerie", keywords: "message messagerie communication support" },
+      { type: "Page", title: "Services", description: "Liste des services disponibles dans l'intranet.", page: "Services", keywords: "services aide support démarches" },
+      { type: "Page", title: "Contact", description: "Formulaire de demande de rendez-vous ou de support.", page: "Contact", keywords: "contact rendez-vous rdv support aide" }
+    ];
+
+    if (isAdmin) {
+      return [
+        ...baseItems,
+        { type: "Page", title: "Demandes", description: "Suivi des demandes administratives des utilisateurs.", page: "Demandes", keywords: "demandes administration reprise examen documents utilisateurs" },
+        { type: "Page", title: "Utilisateurs", description: "Gestion des comptes étudiants et enseignants.", page: "Utilisateurs", keywords: "utilisateurs comptes étudiants enseignants" }
+      ];
+    }
+
+    if (isTeacher) {
+      return [
+        ...baseItems,
+        { type: "Page", title: "Mes cours", description: "Gestion des cours enseignés et documents pédagogiques.", page: "Mes cours", keywords: "cours enseignés pédagogie documents étudiants" }
+      ];
+    }
+
+    return [
+      ...baseItems,
+      { type: "Page", title: "Mes cours", description: "Liste des cours de l'étudiant.", page: "Mes cours", keywords: "cours programmation base données projet" },
+      { type: "Page", title: "Emploi du temps", description: "Horaire hebdomadaire des cours.", page: "Emploi du temps", keywords: "horaire emploi du temps cours lundi mercredi" },
+      { type: "Page", title: "Notes et résultats", description: "Notes, résultats et relevés de l'étudiant.", page: "Notes et résultats", keywords: "notes résultats relevés évaluations" },
+      { type: "Page", title: "Absences", description: "Absences, retards et suivi administratif.", page: "Absences", keywords: "absences retards justification" }
+    ];
+  }, [isAdmin, isTeacher]);
+
+  async function handleIntranetSearch(event) {
+    event?.preventDefault();
+
+    const query = searchTerm.trim();
+    if (!query) {
+      setSearchResults([]);
+      setActivePage("Recherche");
+      return;
+    }
+
+    setSearchLoading(true);
+
+    try {
+      const data = await apiRequest(`/api/search?q=${encodeURIComponent(query)}`);
+      setSearchResults(Array.isArray(data.results) ? data.results : []);
+    } catch {
+      const normalized = query.toLowerCase();
+
+      const localResults = localSearchItems.filter((item) =>
+        item.title.toLowerCase().includes(normalized) ||
+        item.description.toLowerCase().includes(normalized) ||
+        item.keywords.toLowerCase().includes(normalized)
+      );
+
+      let documentResults = [];
+
+      try {
+        const docsData = await apiRequest(`/api/documents?q=${encodeURIComponent(query)}`);
+        documentResults = (docsData.documents || []).map((doc) => ({
+          type: "Document",
+          title: doc.title,
+          description: doc.summary,
+          category: doc.category,
+          page: "Documents"
+        }));
+      } catch {
+        documentResults = [];
+      }
+
+      setSearchResults([...localResults, ...documentResults]);
+    } finally {
+      setSearchLoading(false);
+      setActivePage("Recherche");
+    }
+  }
+
+  function openSearchResult(result) {
+  if (result.type === "Page" && result.page) {
+    setActivePage(result.page);
+    return;
+  }
+
+  openDetail(
+    result.title,
+    result.description || "Résultat de recherche intranet."
+  );
+  }
+
   function renderPage() {
     if (activePage === "Détail" && detail) {
       return (
@@ -486,6 +600,42 @@ function Dashboard({ user, onLogout }) {
           <button className="link-button" type="button" onClick={() => setActivePage("Accueil")}>
             Retour à l'accueil
           </button>
+        </SimplePage>
+      );
+    }
+
+    if (activePage === "Recherche") {
+      return (
+        <SimplePage title="Recherche Intranet">
+          <p>
+            Résultats pour : <strong>{searchTerm || "Aucune recherche"}</strong>
+          </p>
+
+          {searchLoading && <p>Recherche en cours...</p>}
+
+          {!searchLoading && searchResults.length === 0 && (
+            <p>Aucun résultat trouvé dans les pages, documents ou ressources internes.</p>
+          )}
+
+          {!searchLoading && searchResults.length > 0 && (
+            <div className="doc-list">
+              {searchResults.map((result, index) => (
+                <article key={`${result.title}-${index}`}>
+                  <Search />
+                  <div>
+                    <strong>{result.title}</strong>
+                    <span>
+                      {result.type || "Résultat"} {result.category ? `· ${result.category}` : ""}
+                    </span>
+                    <p>{result.description}</p>
+                    <button className="link-button" type="button" onClick={() => openSearchResult(result)}>
+                      Ouvrir →
+                    </button>
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
         </SimplePage>
       );
     }
@@ -867,11 +1017,17 @@ function Dashboard({ user, onLogout }) {
             <Menu />
           </button>
 
-          <div className="searchbar">
+          <form className="searchbar" onSubmit={handleIntranetSearch}>
             <Search size={18} />
-            <input placeholder="Rechercher dans l'intranet..." />
-            <kbd>Ctrl + K</kbd>
-          </div>
+            <input
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="Rechercher dans l'intranet..."
+            />
+            <button className="link-button" type="submit">
+              Rechercher
+            </button>
+          </form>
 
           <Bell />
 

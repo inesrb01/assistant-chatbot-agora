@@ -28,7 +28,7 @@ export async function apiRequest(path, options = {}) {
 
   if (token) headers.Authorization = `Bearer ${token}`;
 
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:3103";
 
   const response = await fetch(`${API_URL}${path}`, {
     ...options,
